@@ -1,1 +1,94 @@
-/* Add styles here */
+:root {
+    --bg-color: #f5f5f5;
+    --text-color: #000000;
+    --btn-bg-color: #ff9800;
+    --btn-text-color: #ffffff;
+    --ball-bg-color: #2196f3;
+    --bonus-ball-bg-color: #e91e63;
+    --hint-text-color: gray;
+}
+
+body.dark-mode {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --btn-bg-color: #bb86fc;
+    --btn-text-color: #000000;
+    --ball-bg-color: #03dac6;
+    --bonus-ball-bg-color: #cf6679;
+    --hint-text-color: #bbbbbb;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+    text-align: center;
+    padding-top: 40px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+button {
+    font-size: 18px;
+    padding: 12px 30px;
+    cursor: pointer;
+    border: none;
+    background: var(--btn-bg-color);
+    color: var(--btn-text-color);
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#theme-toggle {
+    font-size: 24px;
+    padding: 5px 10px;
+    background: transparent;
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+}
+
+.game {
+    margin-top: 25px;
+}
+
+.ball {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 50%;
+    background: var(--ball-bg-color);
+    color: white;
+    margin: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.bonus {
+    background: var(--bonus-ball-bg-color);
+}
+
+.game-title {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.hint {
+    margin-top: 25px;
+    font-size: 14px;
+    color: var(--hint-text-color);
+}
