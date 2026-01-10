@@ -25,13 +25,18 @@ body {
     text-align: center;
     padding-top: 40px;
     transition: background-color 0.3s, color 0.3s;
+    position: relative;
 }
 
-.header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+#theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    padding: 5px 10px;
+    background: transparent;
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
 }
 
 h1 {
