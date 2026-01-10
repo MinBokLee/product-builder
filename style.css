@@ -108,3 +108,64 @@ button:hover {
     font-size: 14px;
     color: var(--hint-text-color);
 }
+
+#contact-form {
+    margin-top: 50px;
+    padding: 20px;
+    background: var(--bg-color);
+    border-top: 1px solid var(--hint-text-color);
+}
+
+#contact-form h2 {
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+#contact-form form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contact-form label {
+    text-align: left;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    padding: 10px;
+    border: 1px solid var(--hint-text-color);
+    border-radius: 5px;
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+#contact-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+#contact-form button[type="submit"] {
+    font-size: 18px;
+    padding: 12px 30px;
+    cursor: pointer;
+    border: none;
+    background: var(--btn-bg-color);
+    color: var(--btn-text-color);
+    border-radius: 6px;
+    transition: background-color 0.3s;
+    width: auto; /* Override general button width to fit content */
+    align-self: flex-end; /* Align button to the right within the form */
+}
+
+#contact-form button[type="submit"]:hover {
+    opacity: 0.8;
+}

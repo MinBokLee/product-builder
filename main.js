@@ -26,13 +26,23 @@ const translations = {
         title: "🍴 오늘 점심 메뉴 추천 🍴",
         button: "점심 메뉴 추천 받기",
         placeholder: "여기에 추천 메뉴가 표시됩니다.",
-        hint: "※ 버튼을 누르면 랜덤으로 메뉴가 추천됩니다."
+        hint: "※ 버튼을 누르면 랜덤으로 메뉴가 추천됩니다.",
+        contact_title: "제휴문의",
+        name_label: "이름:",
+        email_label: "이메일:",
+        message_label: "메시지:",
+        submit_button: "문의하기"
     },
     en: {
         title: "🍴 Today's Lunch Menu Recommendation 🍴",
         button: "Get Lunch Recommendation",
         placeholder: "Recommended menu will be displayed here.",
-        hint: "※ Press the button to get a random menu recommendation."
+        hint: "※ Press the button to get a random menu recommendation.",
+        contact_title: "Partnership Inquiry",
+        name_label: "Name:",
+        email_label: "Email:",
+        message_label: "Message:",
+        submit_button: "Submit Inquiry"
     }
 };
 
@@ -47,6 +57,13 @@ function setLanguage(lang) {
     document.querySelector('.menu-placeholder').textContent = translations[lang].placeholder;
     document.querySelector('.hint').textContent = translations[lang].hint;
     document.getElementById('lang-toggle').textContent = lang === 'ko' ? 'EN' : 'KO';
+
+    // Update contact form elements
+    document.querySelector('#contact-form h2').textContent = translations[lang].contact_title;
+    document.querySelector('label[for="name"]').textContent = translations[lang].name_label;
+    document.querySelector('label[for="email"]').textContent = translations[lang].email_label;
+    document.querySelector('label[for="message"]').textContent = translations[lang].message_label;
+    document.querySelector('#contact-form button[type="submit"]').textContent = translations[lang].submit_button;
 
     // Update recommended menu if already displayed
     const resultDiv = document.getElementById("result");
