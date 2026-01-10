@@ -1,69 +1,32 @@
-// 번호별 가중치 (1~45)
-const weights = Array(46).fill(1);
+const dinnerMenus = [
+    "치킨",
+    "피자",
+    "삼겹살",
+    "초밥",
+    "파스타",
+    "김치찌개",
+    "된장찌개",
+    "족발",
+    "보쌈",
+    "떡볶이",
+    "라멘",
+    "햄버거",
+    "부대찌개",
+    "곱창",
+    "닭갈비",
+    "짜장면",
+    "짬뽕",
+    "마라탕",
+    "쌀국수",
+    "돈까스"
+];
 
-function weightedRandom() {
-    const totalWeight = weights.reduce((a, b) => a + b, 0);
-    let rand = Math.random() * totalWeight;
-
-    for (let i = 1; i <= 45; i++) {
-        rand -= weights[i];
-        if (rand <= 0) return i;
-    }
-}
-
-function generateOneGame() {
-    const selected = new Set();
-
-    // 메인 번호 6개
-    while (selected.size < 6) {
-        selected.add(weightedRandom());
-    }
-
-    const mainNumbers = Array.from(selected).sort((a, b) => a - b);
-
-    // 보너스 번호 (중복 불가)
-    let bonus;
-    do {
-        bonus = weightedRandom();
-    } while (selected.has(bonus));
-
-    return { mainNumbers, bonus };
-}
-
-function generateLotto() {
+function recommendDinner() {
     const resultDiv = document.getElementById("result");
-    resultDiv.innerHTML = "";
+    const randomIndex = Math.floor(Math.random() * dinnerMenus.length);
+    const recommendedMenu = dinnerMenus[randomIndex];
 
-    for (let i = 1; i <= 5; i++) {
-        const { mainNumbers, bonus } = generateOneGame();
-
-        // 가중치 증가 (메인 + 보너스)
-        mainNumbers.forEach(num => weights[num] += 1);
-        weights[bonus] += 1;
-
-        const gameDiv = document.createElement("div");
-        gameDiv.className = "game";
-
-        const title = document.createElement("div");
-        title.className = "game-title";
-        title.textContent = `🎯 ${i}게임`;
-
-        gameDiv.appendChild(title);
-
-        mainNumbers.forEach(num => {
-            const ball = document.createElement("span");
-            ball.className = "ball";
-            ball.textContent = num;
-            gameDiv.appendChild(ball);
-        });
-
-        const bonusBall = document.createElement("span");
-        bonusBall.className = "ball bonus";
-        bonusBall.textContent = bonus;
-        gameDiv.appendChild(bonusBall);
-
-        resultDiv.appendChild(gameDiv);
-    }
+    resultDiv.innerHTML = `<p class="menu-item">${recommendedMenu}</p>`;
 }
 
 document.addEventListener('DOMContentLoaded', () => {

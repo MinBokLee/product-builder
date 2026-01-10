@@ -2,20 +2,22 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>5게임 로또 번호 추천 (보너스 포함)</title>
+    <title>오늘 저녁 뭐 먹지?</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <button id="theme-toggle">🌙</button>
-<h1>🍀 민복의 로또 번호 5게임 추천(보너스 포함) 🍀</h1>
+<h1>🍴 오늘 저녁 메뉴 추천 🍴</h1>
 
-<button onclick="generateLotto()">5게임 추천 받기</button>
+<button onclick="recommendDinner()">저녁 메뉴 추천 받기</button>
 
-<div id="result"></div>
+<div id="result">
+    <p class="menu-placeholder">여기에 추천 메뉴가 표시됩니다.</p>
+</div>
 
 <div class="hint">
-    ※ 메인 번호 + 보너스 번호 모두 가중치 기반 랜덤입니다 (재미용 😆)
+    ※ 버튼을 누르면 랜덤으로 메뉴가 추천됩니다.
 </div>
 
 <script src="main.js"></script>

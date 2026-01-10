@@ -3,8 +3,6 @@
     --text-color: #000000;
     --btn-bg-color: #ff9800;
     --btn-text-color: #ffffff;
-    --ball-bg-color: #2196f3;
-    --bonus-ball-bg-color: #e91e63;
     --hint-text-color: gray;
 }
 
@@ -13,8 +11,6 @@ body.dark-mode {
     --text-color: #ffffff;
     --btn-bg-color: #bb86fc;
     --btn-text-color: #000000;
-    --ball-bg-color: #03dac6;
-    --bonus-ball-bg-color: #cf6679;
     --hint-text-color: #bbbbbb;
 }
 
@@ -59,30 +55,31 @@ button:hover {
     opacity: 0.8;
 }
 
-.game {
-    margin-top: 25px;
+#result {
+    margin-top: 30px;
+    min-height: 50px;
 }
 
-.ball {
-    display: inline-block;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    border-radius: 50%;
-    background: var(--ball-bg-color);
-    color: white;
-    margin: 5px;
+.menu-placeholder {
+    font-size: 18px;
+    color: var(--hint-text-color);
+}
+
+.menu-item {
+    font-size: 28px;
     font-weight: bold;
-    transition: background-color 0.3s;
+    animation: fadeIn 0.5s ease-in-out;
 }
 
-.bonus {
-    background: var(--bonus-ball-bg-color);
-}
-
-.game-title {
-    margin-bottom: 10px;
-    font-weight: bold;
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 .hint {
