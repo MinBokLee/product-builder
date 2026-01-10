@@ -36,6 +36,19 @@ body {
     border-radius: 6px;
 }
 
+#lang-toggle {
+    position: absolute;
+    top: 20px;
+    right: 120px; /* Adjust this value to position it next to theme-toggle */
+    font-size: 24px;
+    padding: 12px 15px;
+    background: transparent;
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
 h1 {
     margin-bottom: 20px;
 }
