@@ -18,6 +18,11 @@ document.addEventListener('DOMContentLoaded', () => {
         'solution-2-title': document.getElementById('solution-2-title'),
         'solution-3-title': document.getElementById('solution-3-title'),
         'solution-4-title': document.getElementById('solution-4-title'),
+        'contact-title': document.getElementById('contact-title'),
+        'contact-name-label': document.getElementById('contact-name-label'),
+        'contact-email-label': document.getElementById('contact-email-label'),
+        'contact-message-label': document.getElementById('contact-message-label'),
+        'contact-submit-button': document.getElementById('contact-submit-button'),
         'footer-text': document.getElementById('footer-text'),
     };
 

@@ -84,6 +84,21 @@
         </div>
     </section>
 
+    <section id="contact-section" class="section">
+        <div class="container">
+            <h2 id="contact-title" data-ko="문의하기" data-en="Contact Us">문의하기</h2>
+            <form id="contact-form" action="https://formspree.io/f/mojjakvr" method="POST">
+                <label for="name" id="contact-name-label" data-ko="이름" data-en="Name">이름:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email" id="contact-email-label" data-ko="이메일" data-en="Email">이메일:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message" id="contact-message-label" data-ko="메시지" data-en="Message">메시지:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit" id="contact-submit-button" data-ko="제출" data-en="Submit">제출</button>
+            </form>
+        </div>
+    </section>
+
     <footer id="contact">
         <div class="container">
             <p id="footer-text" data-ko="&copy; 2026 compare. 모든 권리 보유." data-en="&copy; 2026 compare. All Rights Reserved.">&copy; 2026 compare. 모든 권리 보유.</p>
