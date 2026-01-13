@@ -14,43 +14,44 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="#services">서비스</a></li>
-                    <li><a href="#solutions">솔루션</a></li>
-                    <li><a href="#about">회사소개</a></li>
-                    <li><a href="#contact">연락처</a></li>
+                    <li id="nav-services"><a href="#services" data-ko="서비스" data-en="Services">서비스</a></li>
+                    <li id="nav-solutions"><a href="#solutions" data-ko="솔루션" data-en="Solutions">솔루션</a></li>
+                    <li id="nav-about"><a href="#about" data-ko="회사소개" data-en="About Us">회사소개</a></li>
+                    <li id="nav-contact"><a href="#contact" data-ko="연락처" data-en="Contact">연락처</a></li>
                 </ul>
             </nav>
+            <button id="lang-toggle">EN</button>
         </div>
     </header>
 
     <section id="hero">
         <div class="container">
-            <h1>더 나은 미래를 위한 혁신적인 IT 솔루션</h1>
-            <p>귀하의 비즈니스를 위한 최고의 솔루션을 제공합니다.</p>
+            <h1 id="hero-title" data-ko="더 나은 미래를 위한 혁신적인 IT 솔루션" data-en="Innovative IT Solutions for a Better Future">더 나은 미래를 위한 혁신적인 IT 솔루션</h1>
+            <p id="hero-subtitle" data-ko="귀하의 비즈니스를 위한 최고의 솔루션을 제공합니다." data-en="We provide the best solutions for your business.">귀하의 비즈니스를 위한 최고의 솔루션을 제공합니다.</p>
         </div>
     </section>
 
     <section id="services" class="section">
         <div class="container">
-            <h2>우리의 서비스</h2>
+            <h2 id="services-title" data-ko="우리의 서비스" data-en="Our Services">우리의 서비스</h2>
             <div class="service-box">
                 <img src="https://via.placeholder.com/150/8E44AD/FFFFFF?text=컨설팅" alt="SI/컨설팅">
                 <div class="service-box-content">
-                    <h3>SI/컨설팅</h3>
+                    <h3 id="service-1-title" data-ko="SI/컨설팅" data-en="SI/Consulting">SI/컨설팅</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
                 </div>
             </div>
             <div class="service-box">
                 <img src="https://via.placeholder.com/150/3498DB/FFFFFF?text=아웃소싱" alt="아웃소싱">
                 <div class="service-box-content">
-                    <h3>아웃소싱</h3>
+                    <h3 id="service-2-title" data-ko="아웃소싱" data-en="Outsourcing">아웃소싱</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
                 </div>
             </div>
             <div class="service-box">
                 <img src="https://via.placeholder.com/150/2ECC71/FFFFFF?text=AI+솔루션" alt="AI 솔루션">
                 <div class="service-box-content">
-                    <h3>AI 솔루션</h3>
+                    <h3 id="service-3-title" data-ko="AI 솔루션" data-en="AI Solutions">AI 솔루션</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
                 </div>
             </div>
@@ -59,25 +60,25 @@
 
     <section id="solutions" class="section">
         <div class="container">
-            <h2>우리의 솔루션</h2>
+            <h2 id="solutions-title" data-ko="우리의 솔루션" data-en="Our Solutions">우리의 솔루션</h2>
             <div class="solution-box">
                 <img src="https://via.placeholder.com/150/F1C40F/FFFFFF?text=비용관리" alt="경비 관리 시스템">
-                <h3>경비 관리 시스템</h3>
+                <h3 id="solution-1-title" data-ko="경비 관리 시스템" data-en="Expense Management System">경비 관리 시스템</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
             <div class="solution-box">
                 <img src="https://via.placeholder.com/150/E67E22/FFFFFF?text=인사관리" alt="SAP HR 모듈">
-                <h3>SAP HR 모듈</h3>
+                <h3 id="solution-2-title" data-ko="SAP HR 모듈" data-en="SAP HR Module">SAP HR 모듈</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
             <div class="solution-box">
                 <img src="https://via.placeholder.com/150/E74C3C/FFFFFF?text=AI+진단" alt="AI 시설 진단 시스템">
-                <h3>AI 시설 진단 시스템</h3>
+                <h3 id="solution-3-title" data-ko="AI 시설 진단 시스템" data-en="AI Facility Diagnosis System">AI 시설 진단 시스템</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
             <div class="solution-box">
                 <img src="https://via.placeholder.com/150/95A5A6/FFFFFF?text=ESP" alt="ESP">
-                <h3>ESP</h3>
+                <h3 id="solution-4-title" data-ko="ESP" data-en="ESP">ESP</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
         </div>
@@ -85,7 +86,7 @@
 
     <footer id="contact">
         <div class="container">
-            <p>&copy; 2026 compare. 모든 권리 보유.</p>
+            <p id="footer-text" data-ko="&copy; 2026 compare. 모든 권리 보유." data-en="&copy; 2026 compare. All Rights Reserved.">&copy; 2026 compare. 모든 권리 보유.</p>
         </div>
     </footer>
 

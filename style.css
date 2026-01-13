@@ -32,8 +32,8 @@ header .logo a {
 }
 
 header nav {
-    float: right;
-    margin-top: 5px;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 header nav ul {
@@ -57,8 +57,24 @@ header nav ul li a:hover {
     color: #1abc9c;
 }
 
+#lang-toggle {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-left: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#lang-toggle:hover {
+    background-color: #fff;
+    color: #2c3e50;
+}
+
 #hero {
-    background: url('https://via.placeholder.com/1200x400/34495e/ffffff?text=혁신과+영감') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop') no-repeat center center/cover;
     height: 400px;
     color: #fff;
     display: flex;
