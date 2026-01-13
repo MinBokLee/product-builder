@@ -1,63 +1,73 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>오늘 점심 뭐 먹지?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>compare</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#">compare</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#solutions">Solutions</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<button id="theme-toggle">🌙</button>
-<button id="lang-toggle">EN</button>
-<h1>🍴 오늘 점심 메뉴 추천 🍴</h1>
+    <section id="hero">
+        <div class="container">
+            <h1>Innovative IT Solutions for a Better Future</h1>
+            <p>We provide the best solutions for your business.</p>
+        </div>
+    </section>
 
-<button onclick="recommendDinner()">점심 메뉴 추천 받기</button>
+    <section id="services" class="section">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-box">
+                <h3>SI/Consulting</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+            </div>
+            <div class="service-box">
+                <h3>Outsourcing</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+            </div>
+        </div>
+    </section>
 
-<div id="result">
-    <p class="menu-placeholder">여기에 추천 메뉴가 표시됩니다.</p>
-</div>
+    <section id="solutions" class="section">
+        <div class="container">
+            <h2>Our Solutions</h2>
+            <div class="solution-box">
+                <h3>Business Expense Management</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="solution-box">
+                <h3>SAP HR Module</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="solution-box">
+                <h3>Facility Diagnosis AI System</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+    </section>
 
-<div class="hint">
-    ※ 버튼을 누르면 랜덤으로 메뉴가 추천됩니다.
-</div>
+    <footer id="contact">
+        <div class="container">
+            <p>&copy; 2026 compare. All Rights Reserved.</p>
+        </div>
+    </footer>
 
-<section id="contact-form">
-    <h2>제휴문의</h2>
-    <form action="https://formspree.io/f/mojjakvr" method="POST">
-        <label for="name">이름:</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">이메일:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="message">메시지:</label>
-        <textarea id="message" name="message" required></textarea>
-
-        <button type="submit">문의하기</button>
-    </form>
-</section>
-
-<script src="main.js"></script>
-
-<div id="disqus_thread"></div>
-<script>
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://productbuilder-11.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
+    <script src="main.js"></script>
 </body>
 </html>

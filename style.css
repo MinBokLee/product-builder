@@ -1,176 +1,83 @@
-:root {
-    --bg-color: #f5f5f5;
-    --text-color: #000000;
-    --btn-bg-color: #ff9800;
-    --btn-text-color: #ffffff;
-    --hint-text-color: gray;
-}
-
-body.dark-mode {
-    --bg-color: #121212;
-    --text-color: #ffffff;
-    --btn-bg-color: #bb86fc;
-    --btn-text-color: #000000;
-    --hint-text-color: #bbbbbb;
-}
-
 body {
     font-family: Arial, sans-serif;
-    background: var(--bg-color);
-    color: var(--text-color);
-    text-align: center;
-    padding-top: 40px;
-    transition: background-color 0.3s, color 0.3s;
-    position: relative;
+    margin: 0;
+    line-height: 1.6;
+    color: #333;
 }
 
-#theme-toggle {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 36px;
-    padding: 12px 22px;
-    background: transparent;
-    color: var(--text-color);
-    border: 2px solid var(--text-color);
-    border-radius: 6px;
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
 }
 
-#lang-toggle {
-    position: absolute;
-    top: 20px;
-    right: 120px; /* Adjust this value to position it next to theme-toggle */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header .logo a {
+    color: #fff;
     font-size: 24px;
-    padding: 12px 15px;
-    background: transparent;
-    color: var(--text-color);
-    border: 2px solid var(--text-color);
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-h1 {
-    margin-bottom: 20px;
-}
-
-button {
-    font-size: 18px;
-    padding: 12px 30px;
-    cursor: pointer;
-    border: none;
-    background: var(--btn-bg-color);
-    color: var(--btn-text-color);
-    border-radius: 6px;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    opacity: 0.8;
-}
-
-#result {
-    margin-top: 30px;
-    min-height: 250px;
-}
-
-.menu-image {
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 15px;
-}
-
-.menu-placeholder {
-    font-size: 18px;
-    color: var(--hint-text-color);
-}
-
-.menu-item {
-    font-size: 28px;
+    text-decoration: none;
     font-weight: bold;
-    animation: fadeIn 0.5s ease-in-out;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: scale(0.9);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
+header nav {
+    float: right;
+    margin-top: 5px;
 }
 
-.hint {
-    margin-top: 25px;
-    font-size: 14px;
-    color: var(--hint-text-color);
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
-#contact-form {
-    margin-top: 50px;
-    padding: 20px;
-    background: var(--bg-color);
-    border-top: 1px solid var(--hint-text-color);
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
 }
 
-#contact-form h2 {
-    margin-bottom: 20px;
-    color: var(--text-color);
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
 }
 
-#contact-form form {
-    max-width: 500px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+#hero {
+    background: #f4f4f4;
+    padding: 4rem 0;
+    text-align: center;
 }
 
-#contact-form label {
-    text-align: left;
-    font-weight: bold;
-    color: var(--text-color);
+#hero h1 {
+    font-size: 48px;
+    margin-bottom: 1rem;
 }
 
-#contact-form input[type="text"],
-#contact-form input[type="email"],
-#contact-form textarea {
-    padding: 10px;
-    border: 1px solid var(--hint-text-color);
-    border-radius: 5px;
-    background: var(--bg-color);
-    color: var(--text-color);
-    font-size: 16px;
-    width: 100%;
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+.section {
+    padding: 2rem 0;
 }
 
-#contact-form textarea {
-    resize: vertical;
-    min-height: 100px;
+.section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 32px;
 }
 
-#contact-form button[type="submit"] {
-    font-size: 18px;
-    padding: 12px 30px;
-    cursor: pointer;
-    border: none;
-    background: var(--btn-bg-color);
-    color: var(--btn-text-color);
-    border-radius: 6px;
-    transition: background-color 0.3s;
-    width: auto; /* Override general button width to fit content */
-    align-self: flex-end; /* Align button to the right within the form */
+.service-box, .solution-box {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-#contact-form button[type="submit"]:hover {
-    opacity: 0.8;
-}
-
-#disqus_thread {
-    margin-top: 50px;
-    margin-bottom: 50px;
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
 }
